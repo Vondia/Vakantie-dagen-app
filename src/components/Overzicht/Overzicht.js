@@ -94,7 +94,7 @@ export default function Overzicht() {
   return (
     <div className="Overzicht">
       <p>
-        Sort order:{" "}
+        Sorteer volgorde:{" "}
         <select
           onChange={changeSorting}
           value={sortBy}
@@ -112,7 +112,7 @@ export default function Overzicht() {
           <option value="name">Sorteer op namen</option>
         </select>
         {" -- "}
-        <button onClick={resetDays}>reset dagen</button>
+        <button onClick={resetDays}>dagen resetten</button>
       </p>
       <h3>Dagen resterend</h3>
       {colleaguesSorted.map((colleague) => (
